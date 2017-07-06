@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../AimAndroid.iml" filepath="$PROJECT_DIR$/../AimAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../EazeGraphLibrary/EazeGraphLibrary.iml" filepath="$PROJECT_DIR$/../EazeGraphLibrary/EazeGraphLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../cardstack/cardstack.iml" filepath="$PROJECT_DIR$/../cardstack/cardstack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chart.iml" filepath="$PROJECT_DIR$/chart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../htextview-library/htextview-library.iml" filepath="$PROJECT_DIR$/../htextview-library/htextview-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../library/library.iml" filepath="$PROJECT_DIR$/../library/library.iml" />
+    </modules>
+  </component>
+</project>

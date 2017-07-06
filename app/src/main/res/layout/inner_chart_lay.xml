@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="260dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/fit_risk_title_lay"
+        android:visibility="gone">
+
+    </RelativeLayout>
+
+    <com.hookedonplay.decoviewlib.DecoView
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:id="@+id/dynamic_arc_view"
+        android:layout_marginTop="20dp">
+    </com.hookedonplay.decoviewlib.DecoView>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="230dp"
+        android:text=""
+        android:layout_marginTop="30dp"
+        android:textSize="64sp"
+        android:textColor="#4a4a4a"
+        android:id="@+id/arc_riskness_txt"
+        android:textStyle="normal"
+        android:gravity="center" />
+</RelativeLayout>

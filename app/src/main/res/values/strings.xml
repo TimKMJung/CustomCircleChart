@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SSOIM Circle ChartView</string>
+    <string name="null_error_msg">Please, fill in blank :)</string>
+</resources>

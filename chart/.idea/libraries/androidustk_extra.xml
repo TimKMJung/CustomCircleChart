@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="androidustk_extra">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../app/ref_jars/androidustk_extra.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

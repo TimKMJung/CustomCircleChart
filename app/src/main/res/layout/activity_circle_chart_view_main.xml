@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.ssoim.com.customcirclechartview.views.CircleChartViewMain">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <EditText
+               android:id="@+id/ed_ip_o"
+               android:layout_width="100dp"
+               android:layout_height="40dp"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="15dp"
+               android:gravity="center"
+               />
+
+           <EditText
+               android:id="@+id/ed_ip_t"
+               android:layout_below="@+id/ed_ip_o"
+               android:layout_width="100dp"
+               android:layout_height="40dp"
+               android:layout_centerHorizontal="true"
+               android:gravity="center"
+               />
+
+           <EditText
+               android:id="@+id/ed_ip_th"
+               android:layout_below="@+id/ed_ip_t"
+               android:layout_width="100dp"
+               android:layout_height="40dp"
+               android:layout_centerHorizontal="true"
+               android:gravity="center"
+               />
+
+           <!--<EditText-->
+               <!--android:id="@+id/ed_ip_f"-->
+               <!--android:layout_below="@+id/ed_ip_th"-->
+               <!--android:layout_width="100dp"-->
+               <!--android:layout_height="40dp"-->
+               <!--android:layout_centerHorizontal="true"-->
+               <!--/>-->
+
+           <android.support.design.widget.FloatingActionButton
+               android:id="@+id/fab_btn"
+               android:layout_marginTop="10dp"
+               android:layout_below="@+id/ed_ip_th"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:src="@android:drawable/ic_input_add" />
+
+
+           <android.support.v4.view.ViewPager
+               android:id="@+id/custom_pager"
+               android:layout_below="@+id/fab_btn"
+               android:layout_width="fill_parent"
+               android:layout_height="300dp"
+               android:layout_marginTop="20dp">
+           </android.support.v4.view.ViewPager>
+
+       </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
