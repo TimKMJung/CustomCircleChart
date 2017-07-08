@@ -175,28 +175,28 @@ public class FitChartFragment extends FitChartBaseFragment {
 
         arcView.addEvent(new DecoEvent.Builder(valFloat[0]+valFloat[1])
                 .setIndex(mSeries1Index)
-                .setDelay(300)
-                .setDuration(300)
+                .setDelay(600)
+                .setDuration(600)
                 .build());
 
-        addAnimation(arcView, mSeries3Index, valFloat[2], 300, ETC_COLOR);
+        addAnimation(arcView, mSeries3Index, valFloat[2], 600, ETC_COLOR);
 
         arcView.addEvent(new DecoEvent.Builder(valFloat[1]+valFloat[2])
                 .setIndex(mSeries2Index)
-                .setDelay(600)
-                .setDuration(300)
+                .setDelay(1200)
+                .setDuration(600)
                 .build());
 
         arcView.addEvent(new DecoEvent.Builder(200)
                 .setIndex(mSeries1Index)
-                .setDelay(900)
-                .setDuration(300)
+                .setDelay(1800)
+                .setDuration(600)
                 .build());
 
         arcView.addEvent(new DecoEvent.Builder(EventType.EVENT_COLOR_CHANGE, BG_COLOR)
                 .setIndex(mBack1Index)
-                .setDelay(1200)
-                .setDuration(1200)
+                .setDelay(2400)
+                .setDuration(600)
                 .build());
 
     }

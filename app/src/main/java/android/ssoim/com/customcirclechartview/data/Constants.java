@@ -10,4 +10,5 @@ public class Constants {
 
     public static String TOAST_MSG = "USER_STATUS";
 
+    public static double TOTAL_VALUE_THRESHOLD = 100.00;
 }

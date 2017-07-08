@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.ssoim.com.customcirclechartview.R;
 import android.ssoim.com.customcirclechartview.adapter.FitChartAdapter;
+import android.ssoim.com.customcirclechartview.data.Constants;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -67,6 +68,7 @@ public class CircleChartViewMain extends AppCompatActivity {
             public void afterTextChanged(Editable s) {
                 oEdString = s.toString();
 
+
             }
         });
 
@@ -104,22 +106,6 @@ public class CircleChartViewMain extends AppCompatActivity {
             }
         });
 
-//        fEdit.addTextChangedListener(new TextWatcher() {
-//            @Override
-//            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-//
-//            }
-//
-//            @Override
-//            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-//
-//            }
-//
-//            @Override
-//            public void afterTextChanged(Editable s) {
-//                fEdString = s.toString();
-//            }
-//        });
 
         fabBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -131,6 +117,7 @@ public class CircleChartViewMain extends AppCompatActivity {
 
     }
 
+    // Value Null Check
     private void checkNull() {
         if(oEdString.equals("") || tEdString.equals("") || thEdString.equals("")) {
             Toast.makeText(this, getResources().getString(R.string.null_error_msg), Toast.LENGTH_LONG).show();
@@ -138,6 +125,7 @@ public class CircleChartViewMain extends AppCompatActivity {
             inputValue();
         }
     }
+
 
     private void inputValue() {
 
@@ -148,11 +136,18 @@ public class CircleChartViewMain extends AppCompatActivity {
         inputValue[0] = new Double(oEdString);
         inputValue[1] =  new Double(tEdString);
         inputValue[2] =  new Double(thEdString);
-//
 
-                mViewPager = (ViewPager) findViewById (R.id.custom_pager);
-                mFitChartAdapter = new FitChartAdapter(getSupportFragmentManager());
-                mViewPager.setAdapter(mFitChartAdapter);
+        // Input Total Value Check
+        double totalDouble = inputValue[0] + inputValue[1] + inputValue[2];
+
+        if(totalDouble != Constants.TOTAL_VALUE_THRESHOLD) {
+            Toast.makeText(this, getResources().getString(R.string.total_error_msg), Toast.LENGTH_LONG).show();
+        } else {
+            mViewPager = (ViewPager) findViewById (R.id.custom_pager);
+            mFitChartAdapter = new FitChartAdapter(getSupportFragmentManager());
+            mViewPager.setAdapter(mFitChartAdapter);
+        }
+
 
     }
 
